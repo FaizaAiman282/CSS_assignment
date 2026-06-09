@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card{
+            height: 200px;
+            width:400px;
+            border:10px solid black ;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 20px;
+            
+        }
+        @media (max-width: 768px) {
+            .card{
+            flex-direction : column;
+            height:auto;
+            width: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div>
+            <img src="student_image.png"style="margin-right: 30px; box-shadow:2px 2px 5px grey; height:200px; width: 200px;">
+        </div>
+        <div>
+            <h2>Lisa</h2>
+            <h2>CSE</h2>
+            <h2>lalisa@gmail.com</h2>
+        </div>
+    </div>
+</body>
+</html>
