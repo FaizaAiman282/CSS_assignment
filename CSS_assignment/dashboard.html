@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .header{
+        background-color:rgb(171, 171, 217);
+        height: 60px;
+    }
+    .sidebar{
+        background-color: aqua;
+        width: auto;
+        height: 60px;
+    }
+    .main-content{
+        background-color: antiquewhite;
+        width: auto;
+        height: 60px;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: auto;
+    }
+    @media (max-width:760px) {
+        .sidebar{
+            display: none;
+        }
+        .main-content{
+            width:100vw;
+        }
+        
+    }
+    </style>
+</head>
+<body>
+    <div class="header">
+        Header
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            sidebar
+        </div>
+        <div class="main-content">
+            main-content
+        </div>
+    </div>
+</body>
+</html>
